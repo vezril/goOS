@@ -1,5 +1,9 @@
 package terminal
 
+/*
+ * compiled with: i686-elf-gccgo -static -Werror -nostdlib -nostartfiles -nodefaultlibs -c terminal.go -o terminal.go.o
+ * i686-elf-objcopy -j .go_export terminal.go.o terminal.gox
+*/
 
 func get_vidMem(addr uint32) *[25][80][2]byte
 

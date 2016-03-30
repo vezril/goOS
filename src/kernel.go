@@ -2,6 +2,10 @@ package kernel
 
 import "terminal"
 
+/*
+ * i686-elf-gccgo -static -Werror -nostdlib -nostartfiles -nodefaultlibs -c kernel.go -o kernel.go.o
+ */
+
 func Main() {
 	terminal.Init()
 	terminal.Color = terminal.MakeColor(terminal.White, terminal.Black)
